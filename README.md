@@ -1,5 +1,7 @@
 ## LIBRARY MANAGEMENT SYSTEM(PostgreSQL)
 
+<img src="https://socialify.git.ci/khethiwengema04-gif/Library-Management-System/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="Library-Management-System" width="640" height="320" />
+
 ## Project Description 
 The Library Management System is a relational database application developed using PostgreSQL to streamline library operations. The system is designed to manage a core collection of assets consisting of books, authors, and library patrons.
 Created the database and the database name is LibraryDB. Then the is the the creation of the tables,inserting e.t.c, It supports full CRUD (Create, Read, Update, Delete) operations.

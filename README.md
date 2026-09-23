@@ -89,11 +89,13 @@ SELECT * FROM books WHERE available = TRUE;
 UPDATE books 
 SET available = FALSE
 WHERE id = 1;
-
+```
+``` sql
 UPDATE books
 SET genres = array_append(genres, 'Classic')
 WHERE title = '1984';
-
+```
+``` sql
 UPDATE patron 
 SET borrowed_books = array_append(borrowed_books, 9)
 WHERE id = 1
@@ -102,7 +104,8 @@ WHERE id = 1
 ``` sql
 DELETE FROM books
 WHERE title = 'Moby-Dick';
-
+``` 
+``` sql
 DELETE FROM authors
 WHERE id = 5;
 ```

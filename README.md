@@ -81,4 +81,46 @@ SELECT * FROM books WHERE author_id = 2;
 SELECT * FROM books WHERE available = TRUE;
 ```
 ## UPDATING THE OPERATIONS
-``` 
+``` sql
+UPDATE books 
+SET available = FALSE
+WHERE id = 1;
+
+UPDATE books
+SET genres = array_append(genres, 'Classic')
+WHERE title = '1984';
+
+UPDATE patron 
+SET borrowed_books = array_append(borrowed_books, 9)
+WHERE id = 1
+```
+## DELETE OPERATION
+``` sql
+DELETE FROM books
+WHERE title = 'Moby-Dick';
+
+DELETE FROM authors
+WHERE id = 5;
+```
+<!-- ## ADVANCED QUERIES
+``` sql
+SELECT * FROM books
+WHERE published_year > 1950;
+
+SELECT * FROM authors
+WHERE nationality = 'American';
+
+UPDATE books
+SET available = TRUE;
+
+SELECT * FROM books
+WHERE available = TRUE 
+AND published_year > 1950;
+
+SELECT * FROM authors
+WHERE name ILIKE '%George%';
+
+UPDATE books
+SET published_year = published_year +1
+WHERE published_year = 1869;
+``` -->

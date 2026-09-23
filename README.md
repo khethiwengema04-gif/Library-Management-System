@@ -102,7 +102,7 @@ WHERE title = 'Moby-Dick';
 DELETE FROM authors
 WHERE id = 5;
 ```
-<!-- ## ADVANCED QUERIES
+## ADVANCED QUERIES
 ``` sql
 SELECT * FROM books
 WHERE published_year > 1950;
@@ -123,4 +123,4 @@ WHERE name ILIKE '%George%';
 UPDATE books
 SET published_year = published_year +1
 WHERE published_year = 1869;
-``` -->
+```

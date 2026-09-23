@@ -110,20 +110,25 @@ WHERE id = 5;
 ``` sql
 SELECT * FROM books
 WHERE published_year > 1950;
-
+```
+``` sql
 SELECT * FROM authors
 WHERE nationality = 'American';
-
+```
+``` sql
 UPDATE books
 SET available = TRUE;
-
+```
+``` sql
 SELECT * FROM books
 WHERE available = TRUE 
 AND published_year > 1950;
-
+```
+``` sql
 SELECT * FROM authors
 WHERE name ILIKE '%George%';
-
+```
+``` sql
 UPDATE books
 SET published_year = published_year +1
 WHERE published_year = 1869;
